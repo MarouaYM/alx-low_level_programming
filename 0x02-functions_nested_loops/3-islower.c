@@ -3,6 +3,8 @@
 /**
 * _islower - Print 1 if input is lowercase
 *
+* @c: caractere in ASCII code
+*
 * Return: 1 if lowercase and 0 if it's not
 */
 

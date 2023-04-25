@@ -2,6 +2,8 @@
 
 /**
 * print_last_digit - Print last digit
+* 
+* @n: input number is int
 *
 * Return: last digit
 */
@@ -13,12 +15,12 @@ int print_last_digit(int n)
 	l = n % 10;
 	if (l < 0)
 	{
-		_putchar(-1 + 48);
+		_putchar(-l + 48);
 		return (-l);
 	}
 	else
 	{
-		_putchar(1 + 48);
+		_putchar(l + 48);
 		return (l);
 	}
 	_putchar('\n');

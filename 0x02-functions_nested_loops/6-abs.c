@@ -3,6 +3,8 @@
 /**
 * _abs - Print absolute value of an int
 *
+* @i: input number is an int
+*
 * Return: absolute value
 */
 

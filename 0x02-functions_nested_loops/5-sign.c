@@ -3,6 +3,8 @@
 /**
 * print_sign - input number greater, less or equal to zero
 *
+* @n: input number is int
+*
 * Return: 1 if greater, 0 if zero and -1 if less than zero
 */
 
