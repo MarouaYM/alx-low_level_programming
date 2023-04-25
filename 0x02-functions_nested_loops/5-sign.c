@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
-* main - Entry point
-* Description: if input number greater, less or equal to zero
+* print_sign - input number greater, less or equal to zero
+*
 * Return: 1 if greater, 0 if zero and -1 if less than zero
 */
 

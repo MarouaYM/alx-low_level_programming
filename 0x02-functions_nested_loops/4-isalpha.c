@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
-* main - Entry point
-* Description: Print 1 if input is alphabetic
+* _isalpha - Print 1 if input is alphabetic
+*
 * Return: 1 if is a letter and 0 if it's not
 */
 
-int _islower(int c)
+int _isalpha(int c)
 {
 	if (c >= 97 && c <= 122)
 	{

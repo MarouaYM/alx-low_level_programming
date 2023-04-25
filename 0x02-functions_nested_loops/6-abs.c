@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
-* main - Entry point
-* Description: Print absolute value of an int
+* _abs - Print absolute value of an int
+*
 * Return: absolute value
 */
 

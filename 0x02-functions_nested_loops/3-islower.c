@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
-* main - Entry point
-* Description: Print 1 if input is lowercase
+* _islower - Print 1 if input is lowercase
+*
 * Return: 1 if lowercase and 0 if it's not
 */
 
