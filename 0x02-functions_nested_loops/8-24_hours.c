@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* print_last_digit - Print minutes of a day
+* jack_bauer - Print minutes of a day
 *
 * Return: last digit
 */
