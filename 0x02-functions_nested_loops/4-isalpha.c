@@ -2,7 +2,7 @@
 
 /**
 * _isalpha - Print 1 if input is alphabetic
-* 
+*
 * @c: caracter in ASCII code
 *
 * Return: 1 if is a letter and 0 if it's not
