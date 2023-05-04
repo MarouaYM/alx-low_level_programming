@@ -4,7 +4,6 @@
 * _strcat - Concatenate two strings
 * @dest: string 1
 * @src: string 2
-* @n : number of bytes
 * Return: Pointer
 */
 
