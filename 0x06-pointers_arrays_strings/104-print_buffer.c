@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
- 
-/*
+
+/**
  * print_buffer - adds to numbers in strings
  * @b: input int
  * @size: size buffer
@@ -10,45 +10,50 @@
 
 void print_buffer(char *b, int size)
 {
-	int j, i = 0;
+	int byte, index;
 
 	if (size < 0)
 	{
-		printf('\n');
+		printf("\n");
 		return;
 	}
-	while (i < size)
+	for (byte = 0; byte < size ; byte += 10)
 	{
-		if (i % 10 == 0)
+		printf("%08x: ", byte);
+		for (index = 0; index < 10 ; index++)
 		{
-			printf("%08x: ", i);
-		}
-		for (j = i; j < i + 9; j += 2)
-		{
-			if ((j < size) && ((j+1) < size))
+			if ((index + byte) >= size)
 			{
-				printf("%02x%02x: ", b[j], b[i + 1]);
+				printf(" ");
 			}
 			else
 			{
-				while (++j <= i + 10)
-					printf(" ");
+				printf("%02x", *(b + index + byte));
+			}
+			if ((index % 2) != 0 && index != 0)
+			{
 				printf(" ");
 			}
 		}
-		for (j = i; j < i + 9 && j < size; j++)
+		for (index = 0; index < 10 ; index++)
 		{
-			if (b[j] >= 32 && b[j] <= 126)
+			if ((index + byte) >= size)
 			{
-				printf("%c", b[j]);
+				break;
+			}
+			else if (*(b + index + byte) >= 31 && *(b + index + byte) <= 126)
+			{
+				printf("%c", *(b + index + byte));
 			}
 			else
 			{
 				printf(".");
 			}
 		}
-		printf('\n');
-		i += 10 ;
+		if (byte >= size)
+			continue;
+		printf("\n");
 	}
+	if (size <= 0)
+		printf("\n");
 }
-
